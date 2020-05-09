@@ -56,8 +56,6 @@ public class MilnMethod {
                     x.add(0, x0);
                     y.add(0, y0);
                     f.add(0, f(x.get(0), y.get(0)));
-                    System.out.println("new h = " + h);
-                    System.out.println("new n = " + n);
                 }
             }
         }

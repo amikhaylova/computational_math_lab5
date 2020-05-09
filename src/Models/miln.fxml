@@ -24,7 +24,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Button>
-            <LineChart fx:id="lineChart" animated="false" layoutX="501.0" layoutY="14.0" prefHeight="409.0" prefWidth="447.0" title="График решения">
+            <LineChart fx:id="lineChart" animated="false" layoutX="501.0" layoutY="14.0" prefHeight="409.0" prefWidth="447.0" title="График решения y = f(x)">
                <xAxis>
                   <NumberAxis label="x" prefHeight="47.0" prefWidth="456.0" side="BOTTOM" fx:id="xAxis" />
                </xAxis>
@@ -64,7 +64,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="f_tf" layoutX="75.0" layoutY="80.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="250.0">
+            <TextArea fx:id="f_tf" layoutX="66.0" layoutY="80.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="285.0">
                <font>
                   <Font name="Courier New Bold" size="18.0" />
                </font>
@@ -74,7 +74,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea layoutX="74.0" layoutY="187.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="80.0" fx:id="x0">
+            <TextArea layoutX="65.0" layoutY="187.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="80.0" fx:id="x0">
                <font>
                   <Font name="Courier New Bold" size="18.0" />
                </font>
@@ -84,7 +84,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="y0" layoutX="247.0" layoutY="187.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="80.0">
+            <TextArea fx:id="y0" layoutX="247.0" layoutY="187.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="80.0">
                <font>
                   <Font name="Courier New Bold" size="18.0" />
                </font>
@@ -99,7 +99,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="e" layoutX="74.0" layoutY="293.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="250.0">
+            <TextArea fx:id="e" layoutX="65.0" layoutY="293.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="285.0">
                <font>
                   <Font name="Courier New Bold" size="18.0" />
                </font>
@@ -114,7 +114,7 @@
                   <Font name="Courier New Bold" size="18.0" />
                </font>
             </Text>
-            <TextArea fx:id="rightBorder" layoutX="74.0" layoutY="398.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="80.0">
+            <TextArea fx:id="rightBorder" layoutX="65.0" layoutY="398.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="80.0">
                <font>
                   <Font name="Courier New Bold" size="18.0" />
                </font>

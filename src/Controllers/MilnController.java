@@ -13,6 +13,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import org.nfunk.jep.JEP;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -120,18 +121,40 @@ public class MilnController {
                 List<Double> yList = solver.getYList();
                 List<Double> xList = solver.getXList();
 
-                List<BigDecimal> x1 = new ArrayList<>();
-                List<BigDecimal> y1 = new ArrayList<>();
-
                 for (int i = 0; i < xList.size(); i++) {
                     BigDecimal t = new BigDecimal(xList.get(i));
                     BigDecimal k = new BigDecimal(yList.get(i));
                     points.add(new Point(t.setScale(4, RoundingMode.HALF_EVEN), k.setScale(4, RoundingMode.HALF_EVEN)));
                 }
                 showAnswer(solver.getH(), solver.getLeftBorder(), solver.getRightBorder(), solver.getN());
-                drawPlot(xList,yList);
+                drawPlot(xList, yList);
+
             }
 
+        });
+
+        test2.setOnAction(event -> {
+            f_tf.setText("2*y/x + 3/x^2");
+            x0.setText("1");
+            y0.setText("-1");
+            e.setText("0.0000000000001");
+            rightBorder.setText("10");
+        });
+
+        test1.setOnAction(event -> {
+            f_tf.setText("2*y/(x+1) + (x+1)^3");
+            x0.setText("0");
+            y0.setText("0.5");
+            e.setText("0.00000001");
+            rightBorder.setText("5");
+        });
+
+        test3.setOnAction(event -> {
+            f_tf.setText("3*x^2*e^(-x) - (x+1)*y/x");
+            x0.setText("1");
+            y0.setText("0");
+            e.setText("0.0000001");
+            rightBorder.setText("7.5");
         });
 
     }
